@@ -31,6 +31,9 @@ public class Familie {
             return mitglieder.get(1);
         }
         if(person==Familienmitglied.KINDER){
+            if(mitglieder.size()<3){
+                return "";
+            }
             ArrayList<String> kinder = new ArrayList<String>();
             for(int i=2;i<mitglieder.size();i++){
                 kinder.add(mitglieder.get(i));
