@@ -38,7 +38,7 @@ public class Familie {
             for(int i=2;i<mitglieder.size();i++){
                 kinder.add(mitglieder.get(i));
             }
-            return String.join(",",kinder);
+            return String.join(", ",kinder);
         }
         return null;
     }
